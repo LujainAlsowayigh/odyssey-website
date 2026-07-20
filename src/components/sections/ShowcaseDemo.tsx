@@ -37,14 +37,14 @@ export function ShowcaseDemo() {
   const xPos = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   const screens = [
-    { key: 'screen_home',      image: '/odyssey-website/screenshots/home.jpg' },
-    { key: 'screen_kingdom',   image: '/odyssey-website/screenshots/home-kingdom.jpg' },
-    { key: 'screen_challenge', image: '/odyssey-website/screenshots/challenge.jpg' },
-    { key: 'screen_complete',  image: '/odyssey-website/screenshots/complete.jpg' },
-    { key: 'screen_report',    image: '/odyssey-website/screenshots/report.jpg' },
-    { key: 'screen_dashboard', image: '/odyssey-website/screenshots/dashboard.jpg' },
-    { key: 'screen_rewards',   image: '/odyssey-website/screenshots/rewards.jpg' },
+    { key: 'onboarding',       label: 'Welcome',          image: '/screenshots/onboarding-name.jpg' },
+    { key: 'onboarding_age',   label: 'Choose Age',       image: '/screenshots/onboarding-age.jpg' },
+    { key: 'screen_kingdom',   image: '/screenshots/kingdom.jpg' },
+    { key: 'screen_challenge', image: '/screenshots/challenge.jpg' },
+    { key: 'screen_dashboard', image: '/screenshots/dashboard.jpg' },
+    { key: 'screen_rewards',   image: '/screenshots/rewards.jpg' },
   ];
+  const screenLabel = (s) => s.label ?? t(`showcase.`);
 
   return (
     <div className="overflow-hidden">
@@ -72,14 +72,14 @@ export function ShowcaseDemo() {
                   <PhoneMockup className="shadow-xl group-hover:shadow-2xl">
                     <img
                       src={screen.image}
-                      alt={t(`showcase.${screen.key}`)}
+                      alt={screenLabel(screen)}
                       className="w-full h-full object-cover object-top"
                       loading="lazy"
                     />
                   </PhoneMockup>
                 </div>
                 <h3 className="mt-8 font-bold text-brand-navy opacity-60 group-hover:opacity-100 transition-opacity">
-                  {t(`showcase.${screen.key}`)}
+                  {screenLabel(screen)}
                 </h3>
               </div>
             ))}
@@ -87,7 +87,7 @@ export function ShowcaseDemo() {
         </div>
       </section>
 
-      {/* Demo Video — URL is configured in src/config.ts */}
+      {/* Demo Video â€” URL is configured in src/config.ts */}
       {DEMO_VIDEO_URL ? (
         <section id="demo" className="py-24 bg-gray-900 relative">
           <div className="container mx-auto px-6 md:px-12">
@@ -119,7 +119,7 @@ export function ShowcaseDemo() {
                     <iframe
                       className="absolute inset-0 w-full h-full"
                       src={DEMO_VIDEO_URL}
-                      title="Odyssey — Children's Learning Companion Demo"
+                      title="Odyssey â€” Children's Learning Companion Demo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                       onError={() => setIframeError(true)}
@@ -135,7 +135,7 @@ export function ShowcaseDemo() {
       <Lightbox
         images={screens.map(s => s.image)}
         index={lightboxIndex}
-        getAlt={(i) => t(`showcase.${screens[i].key}`)}
+        getAlt={(i) => screenLabel(screens[i])}
         onClose={() => setLightboxIndex(null)}
         onNavigate={setLightboxIndex}
       />

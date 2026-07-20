@@ -8,10 +8,11 @@
  * Supported values:
  *   - A YouTube privacy-enhanced embed URL
  *     e.g. "https://www.youtube-nocookie.com/embed/<VIDEO_ID>?autoplay=1&mute=1&..."
- *   - A direct video file URL (mp4, webm, etc.) — use a <video> tag instead of iframe
- *   - An empty string "" — hides the Demo Video section
+ *   - A direct video file URL (mp4, webm, etc.) ??? use a <video> tag instead of iframe
+ *   - An empty string "" ??? hides the Demo Video section
  */
-export const DEMO_VIDEO_URL = "/odyssey-demo-video/";
+export const DEMO_VIDEO_URL = "/demo.mp4";
 
 /** URL of the live Expo web app */
 export const APP_URL = "/odyssey/";
+

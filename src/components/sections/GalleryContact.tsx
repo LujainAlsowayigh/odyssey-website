@@ -10,14 +10,14 @@ export function GalleryContact() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const galleryScreenshots = [
-    '/odyssey-website/screenshots/home.jpg',
-    '/odyssey-website/screenshots/challenge.jpg',
-    '/odyssey-website/screenshots/complete.jpg',
-    '/odyssey-website/screenshots/report.jpg',
-    '/odyssey-website/screenshots/dashboard.jpg',
-    '/odyssey-website/screenshots/rewards.jpg',
-    '/odyssey-website/screenshots/challenge.jpg',
-    '/odyssey-website/screenshots/complete.jpg',
+    '/screenshots/home.jpg',
+    '/screenshots/challenge.jpg',
+    '/screenshots/complete.jpg',
+    '/screenshots/report.jpg',
+    '/screenshots/dashboard.jpg',
+    '/screenshots/rewards.jpg',
+    '/screenshots/challenge.jpg',
+    '/screenshots/complete.jpg',
   ];
 
   return (
