@@ -37,14 +37,19 @@ export function ShowcaseDemo() {
   const xPos = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   const screens = [
+    { key: 'language',         label: 'Choose Language',  image: '/screenshots/language.jpg' },
     { key: 'onboarding',       label: 'Welcome',          image: '/screenshots/onboarding-name.jpg' },
     { key: 'onboarding_age',   label: 'Choose Age',       image: '/screenshots/onboarding-age.jpg' },
     { key: 'screen_kingdom',   image: '/screenshots/kingdom.jpg' },
-    { key: 'screen_challenge', image: '/screenshots/challenge.jpg' },
-    { key: 'screen_dashboard', image: '/screenshots/dashboard.jpg' },
+    { key: 'games_hub',        label: 'Practice Games',   image: '/screenshots/games-hub.jpg' },
+    { key: 'sound_explorer',   label: 'Sound Explorer',   image: '/screenshots/sound-explorer.jpg' },
+    { key: 'pronunciation_ok', label: 'Great Job!',       image: '/screenshots/pronunciation-success.jpg' },
+    { key: 'market_toast',     label: 'Royal Market',     image: '/screenshots/market-toast.jpg' },
     { key: 'screen_rewards',   image: '/screenshots/rewards.jpg' },
+    { key: 'screen_dashboard', image: '/screenshots/dashboard.jpg' },
+    { key: 'parent_progress',  label: 'Parent Insights',  image: '/screenshots/parent-progress.jpg' },
   ];
-  const screenLabel = (s) => s.label ?? t(`showcase.`);
+  const screenLabel = (s: { key: string; label?: string }) => s.label ?? t(`showcase.${s.key}`);
 
   return (
     <div className="overflow-hidden">
@@ -87,7 +92,7 @@ export function ShowcaseDemo() {
         </div>
       </section>
 
-      {/* Demo Video â€” URL is configured in src/config.ts */}
+      {/* Demo Video — URL is configured in src/config.ts */}
       {DEMO_VIDEO_URL ? (
         <section id="demo" className="py-24 bg-gray-900 relative">
           <div className="container mx-auto px-6 md:px-12">
@@ -119,7 +124,7 @@ export function ShowcaseDemo() {
                     <iframe
                       className="absolute inset-0 w-full h-full"
                       src={DEMO_VIDEO_URL}
-                      title="Odyssey â€” Children's Learning Companion Demo"
+                      title="Odyssey — Children's Learning Companion Demo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                       onError={() => setIframeError(true)}

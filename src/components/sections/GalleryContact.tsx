@@ -10,14 +10,17 @@ export function GalleryContact() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const galleryScreenshots = [
-    '/screenshots/home.jpg',
-    '/screenshots/challenge.jpg',
-    '/screenshots/complete.jpg',
-    '/screenshots/report.jpg',
-    '/screenshots/dashboard.jpg',
+    '/screenshots/language.jpg',
+    '/screenshots/onboarding-name.jpg',
+    '/screenshots/onboarding-age.jpg',
+    '/screenshots/kingdom.jpg',
+    '/screenshots/games-hub.jpg',
+    '/screenshots/sound-explorer.jpg',
+    '/screenshots/pronunciation-success.jpg',
+    '/screenshots/market-toast.jpg',
     '/screenshots/rewards.jpg',
-    '/screenshots/challenge.jpg',
-    '/screenshots/complete.jpg',
+    '/screenshots/dashboard.jpg',
+    '/screenshots/parent-progress.jpg',
   ];
 
   return (

@@ -12,19 +12,19 @@ export function Games() {
       id: 'g1',
       icon: <Volume2 className="text-white w-8 h-8" />,
       bgColor: "bg-brand-blue",
-      image: '/screenshots/challenge.jpg',
+      image: '/screenshots/pronunciation-success.jpg',
     },
     {
       id: 'g2',
       icon: <Mic className="text-white w-8 h-8" />,
       bgColor: "bg-brand-coral",
-      image: '/screenshots/kingdom.jpg',
+      image: '/screenshots/games-hub.jpg',
     },
     {
       id: 'g3',
       icon: <Activity className="text-white w-8 h-8" />,
       bgColor: "bg-brand-purple",
-      image: '/screenshots/dashboard.jpg',
+      image: '/screenshots/sound-explorer.jpg',
     }
   ];
 
@@ -59,7 +59,7 @@ export function Games() {
               </p>
               
               <div className="w-full bg-brand-navy/50 rounded-2xl p-4 mb-8 border border-white/5">
-                <p className="text-brand-gold text-sm font-semibold">??? {t(`games.${game.id}_ai`)}</p>
+                <p className="text-brand-gold text-sm font-semibold">✨ {t(`games.${game.id}_ai`)}</p>
               </div>
 
               <div className="w-full max-w-[220px] scale-90 origin-top">
