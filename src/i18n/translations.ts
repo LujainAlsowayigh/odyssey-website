@@ -193,7 +193,8 @@ export const translations = {
       sub: "Help children build confidence through fun, engaging, AI-powered pronunciation practice.",
       btn1: "Watch Demo",
       btn2: "Explore the App",
-      btn3: "Contact Me"
+      btn3: "Contact Me",
+      qr_caption: "Scan to install the demo build — Android only. Open the link on an Android phone, download, and allow installation from this source if prompted."
     },
     gallery: {
       title: "Gallery"
@@ -400,7 +401,8 @@ export const translations = {
       sub: "ساعد الأطفال على بناء ثقتهم من خلال تدريب نطق ممتع وتفاعلي مدعوم بالذكاء الاصطناعي.",
       btn1: "شاهد العرض",
       btn2: "استكشف التطبيق",
-      btn3: "تواصل معي"
+      btn3: "تواصل معي",
+      qr_caption: "امسح الكود لتثبيت النسخة التجريبية — للأندرويد فقط. افتحي الرابط من جوال أندرويد، حمّلي التطبيق، واسمحي بالتثبيت من هذا المصدر إذا طلب منك."
     },
     gallery: {
       title: "المعرض"
