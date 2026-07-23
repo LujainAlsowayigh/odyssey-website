@@ -13,5 +13,5 @@
  */
 export const DEMO_VIDEO_URL = "/demo.mp4";
 
-/** URL of the real Android demo build (EAS Build) — Android only */
-export const APP_URL = "https://expo.dev/accounts/lujainalsowayigh/projects/odyssey/builds/bd8f70fc-d4a1-4e18-bed4-16bf846eae72";
+/** URL of Odyssey's own branded download page (hides the raw Expo build URL from the QR code/buttons) */
+export const APP_URL = "https://odyssey-website-omega.vercel.app/download";
